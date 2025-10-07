@@ -32,7 +32,9 @@ const Navbar = () => {
         </a>
         <ul>
           {navLinks.map((link) => (
-            <li key={link.id}> {link.title} </li>
+            <li key={link.id}>
+              <a href={link.id}> {link.title}</a>
+            </li>
           ))}
         </ul>
       </div>
